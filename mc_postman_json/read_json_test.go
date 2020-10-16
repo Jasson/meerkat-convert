@@ -1,4 +1,4 @@
-package mc_json
+package mc_postman_json
 
 import (
 	"testing"

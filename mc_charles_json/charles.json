@@ -1,0 +1,747 @@
+[
+  {
+    "status": "COMPLETE",
+    "method": "PUT",
+    "protocolVersion": "HTTP/2.0",
+    "scheme": "https",
+    "host": "appv1.lenovo.com.cn",
+    "port": 443,
+    "actualPort": 443,
+    "path": "/v2.0/linkage_rules/a2f2e573584c44d03e65a830fe43584de117bc6f",
+    "query": "ts=1600415878",
+    "tunnel": false,
+    "keptAlive": true,
+    "webSocket": false,
+    "remoteAddress": "appv1.lenovo.com.cn/39.97.4.45",
+    "clientAddress": "/192.168.199.158",
+    "clientPort": 59271,
+    "times": {
+      "start": "2020-10-16T16:23:34.056+08:00",
+      "requestBegin": "2020-10-16T16:23:34.057+08:00",
+      "requestComplete": "2020-10-16T16:23:34.057+08:00",
+      "responseBegin": "2020-10-16T16:23:34.115+08:00",
+      "end": "2020-10-16T16:23:34.116+08:00"
+    },
+    "durations": {
+      "total": 59,
+      "dns": null,
+      "connect": null,
+      "ssl": null,
+      "request": 0,
+      "response": 1,
+      "latency": 58
+    },
+    "speeds": {
+      "overall": 22118,
+      "request": 0,
+      "response": 190000
+    },
+    "totalSize": 1305,
+    "ssl": {
+      "protocol": "TLSv1.2",
+      "cipherSuite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"
+    },
+    "alpn": {
+      "protocol": "h2"
+    },
+    "request": {
+      "sizes": {
+        "headers": 74,
+        "body": 1041
+      },
+      "mimeType": null,
+      "charset": null,
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          {
+            "name": ":method",
+            "value": "PUT"
+          },
+          {
+            "name": ":scheme",
+            "value": "https"
+          },
+          {
+            "name": ":path",
+            "value": "/v2.0/linkage_rules/a2f2e573584c44d03e65a830fe43584de117bc6f?ts=1600415878"
+          },
+          {
+            "name": ":authority",
+            "value": "appv1.lenovo.com.cn:443"
+          },
+          {
+            "name": "accept",
+            "value": "*/*"
+          },
+          {
+            "name": "cookie",
+            "value": "cerpreg-passport=\"|2|1602811868|1605403868|bGVub3ZvSWQ6MTE6MTAwNDg1NzUzOTd8bG9naW5OYW1lOjExOjEzMzExNTEwNTMyfG1lbWJlcklkOjEwOjE2MDU0MDM4Njh8Z3JvdXBDb2RlOjE6MXxpc0xlbm92bzoxOjA=|LTMd/RUX9FgeIxL1G/YtPSRUng2SQh1BxZbKFpKwOL2+NltHQqAGbDRfCNBQ1b1WUXGLKXPSdbd7b0E9ZODh5C8Vj366EnK8LaJF5+OUWkSsO3FJKXjcwV22Y6PsUyZPMWhghoEttWyOSKgesModjzciM9pM1AvqWUZJPH/b4C2f6YfCoGGaawi4d35MeCQAuQno+Ocuzb7AhasEdTtBJTvsCf6KQd4oh4cVAPbJ3g9EVU+pZVaEg7EA4HZUSFTPm0OzyFX8UvKF1m/5TUrxBeEVOH70owejXCtoCSNgFBTmyJvvDJpgq40OMxkLGjtCWzs/vlfNQoh725mqsoaryA==|\"; _ga=GA1.3.1785471584.1597575647; LA_R_C_10000001=1; LA_R_T_10000001=1599634159891; LA_V_T_10000001=1599634159891; LA_F_T_10000001=1598941649781; LA_M_W_10000001=_ck20070918322619180574610397375%7C10000001%7C%7C%7C; LA_V_T_N_10000161=1598323321624; LA_R_C_10000161=2; LA_R_T_10000161=1598323240031; LA_V_T_N_S_10000161=1598323240031; LA_R_C_10000008=1; LA_R_T_10000008=1597915445536; LA_V_T_N_10000008=1597915445536; LA_V_T_N_S_10000008=1597915445536; LA_F_T_10000008=1597575647330; LA_M_W_10000008=_ck20070918322619180574610397375%7C10000008%7C%7Cwap_1528%7Cwap_Intelligence; leid=1.FSBtRgQ2A+w; LA_C_Id=_ck20070918322619180574610397375; LA_F_T_10000161=1594290746908; LA_M_W_10000161=_ck20070918322619180574610397375%7C10000161%7C%7Cpc_%7Cpc_child; lenovo-ase-cookie=De4SxV28503Vl93Rv8c0"
+          },
+          {
+            "name": "accept-encoding",
+            "value": "gzip, deflate, br"
+          },
+          {
+            "name": "x-lenovows-userkey",
+            "value": "8855d973306973f91306e2c3ec4a3dd5"
+          },
+          {
+            "name": "octopus_sid",
+            "value": "cd17961d7fb8e57a503bfffd8a214c37"
+          },
+          {
+            "name": "user-agent",
+            "value": "%E6%99%BA%E6%85%A7%E8%81%94%E6%83%B3/2.2.3.0 CFNetwork/1128.0.1 Darwin/19.6.0"
+          },
+          {
+            "name": "accept-language",
+            "value": "zh-cn"
+          },
+          {
+            "name": "content-length",
+            "value": "1041"
+          }
+        ]
+      },
+      "body": {
+        "text": "{\n  \"trigger_ways\" : [\n    2\n  ],\n  \"rule_name\" : \"test\",\n  \"conditions\" : [\n    {\n      \"class_id\" : \"0x000c\",\n      \"option\" : \"=\",\n      \"gadget_type_id\" : \"507\",\n      \"gadget_id\" : \"ecd4de50df38d7a24659964a10cabd43aa47a198\",\n      \"value\" : [\n        \"1\"\n      ],\n      \"trigger_type\" : \"1\",\n      \"attribute_id\" : \"0x000c0000\"\n    }\n  ],\n  \"push_msg_flag\" : true,\n  \"valid\" : true,\n  \"rule_desc\" : \"\",\n  \"condition_type\" : \"and\",\n  \"week\" : [\n\n  ],\n  \"lcui_flag\" : \"0\",\n  \"actions\" : [\n    {\n      \"delay\" : [\n        0,\n        3\n      ],\n      \"cmd\" : \"mfa\",\n      \"timer_id\" : \"8855d973306973f91306e2c3ec4a3dd51578625891\",\n      \"action_type\" : \"4\"\n    },\n    {\n      \"action_type\" : \"1\",\n      \"class_id\" : \"0x0004\",\n      \"gadget_type_id\" : \"200001\",\n      \"gadget_id\" : \"066cc6619da48b15545d515cf520f19481d439bd\",\n      \"cmd\" : \"device\",\n      \"action\" : {\n        \"param\" : [\n          \"ç­±ç­±ç¸ç¸åæ¥äº\"\n        ],\n        \"action_id\" : \"0x0004001a\"\n      }\n    }\n  ],\n  \"lcui_shortcuts\" : [\n\n  ]\n}",
+        "charset": null
+      }
+    },
+    "response": {
+      "status": 200,
+      "sizes": {
+        "headers": 98,
+        "body": 92
+      },
+      "mimeType": "application/json",
+      "charset": "utf8",
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          {
+            "name": ":status",
+            "value": "200"
+          },
+          {
+            "name": "date",
+            "value": "Fri, 16 Oct 2020 08:23:34 GMT"
+          },
+          {
+            "name": "content-type",
+            "value": "application/json;charset=utf8"
+          },
+          {
+            "name": "content-length",
+            "value": "92"
+          },
+          {
+            "name": "access-control-allow-origin",
+            "value": "*"
+          },
+          {
+            "name": "x-frame-options",
+            "value": "SAMEORIGIN"
+          }
+        ]
+      },
+      "body": {
+        "text": "{\"flag\":\"0\",\"code\":\"0\",\"ts\":1602836614,\"rule_id\":\"a2f2e573584c44d03e65a830fe43584de117bc6f\"}",
+        "charset": "utf8"
+      }
+    }
+  },
+  {
+    "status": "COMPLETE",
+    "method": "GET",
+    "protocolVersion": "HTTP/2.0",
+    "scheme": "https",
+    "host": "appv1.lenovo.com.cn",
+    "port": 443,
+    "actualPort": 443,
+    "path": "/v2.0/linkage_rules",
+    "query": "ts=1600415878",
+    "tunnel": false,
+    "keptAlive": true,
+    "webSocket": false,
+    "remoteAddress": "appv1.lenovo.com.cn/39.97.4.45",
+    "clientAddress": "/192.168.199.158",
+    "clientPort": 59271,
+    "times": {
+      "start": "2020-10-16T16:23:34.145+08:00",
+      "requestBegin": "2020-10-16T16:23:34.146+08:00",
+      "requestComplete": "2020-10-16T16:23:34.146+08:00",
+      "responseBegin": "2020-10-16T16:23:34.272+08:00",
+      "end": "2020-10-16T16:23:34.274+08:00"
+    },
+    "durations": {
+      "total": 128,
+      "dns": null,
+      "connect": null,
+      "ssl": null,
+      "request": 0,
+      "response": 2,
+      "latency": 126
+    },
+    "speeds": {
+      "overall": 24507,
+      "request": 0,
+      "response": 1563000
+    },
+    "totalSize": 3137,
+    "ssl": {
+      "protocol": "TLSv1.2",
+      "cipherSuite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"
+    },
+    "alpn": {
+      "protocol": "h2"
+    },
+    "request": {
+      "sizes": {
+        "headers": 11,
+        "body": 0
+      },
+      "mimeType": null,
+      "charset": null,
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          {
+            "name": ":method",
+            "value": "GET"
+          },
+          {
+            "name": ":scheme",
+            "value": "https"
+          },
+          {
+            "name": ":path",
+            "value": "/v2.0/linkage_rules?ts=1600415878"
+          },
+          {
+            "name": ":authority",
+            "value": "appv1.lenovo.com.cn:443"
+          },
+          {
+            "name": "cookie",
+            "value": "cerpreg-passport=\"|2|1602811868|1605403868|bGVub3ZvSWQ6MTE6MTAwNDg1NzUzOTd8bG9naW5OYW1lOjExOjEzMzExNTEwNTMyfG1lbWJlcklkOjEwOjE2MDU0MDM4Njh8Z3JvdXBDb2RlOjE6MXxpc0xlbm92bzoxOjA=|LTMd/RUX9FgeIxL1G/YtPSRUng2SQh1BxZbKFpKwOL2+NltHQqAGbDRfCNBQ1b1WUXGLKXPSdbd7b0E9ZODh5C8Vj366EnK8LaJF5+OUWkSsO3FJKXjcwV22Y6PsUyZPMWhghoEttWyOSKgesModjzciM9pM1AvqWUZJPH/b4C2f6YfCoGGaawi4d35MeCQAuQno+Ocuzb7AhasEdTtBJTvsCf6KQd4oh4cVAPbJ3g9EVU+pZVaEg7EA4HZUSFTPm0OzyFX8UvKF1m/5TUrxBeEVOH70owejXCtoCSNgFBTmyJvvDJpgq40OMxkLGjtCWzs/vlfNQoh725mqsoaryA==|\"; _ga=GA1.3.1785471584.1597575647; LA_R_C_10000001=1; LA_R_T_10000001=1599634159891; LA_V_T_10000001=1599634159891; LA_F_T_10000001=1598941649781; LA_M_W_10000001=_ck20070918322619180574610397375%7C10000001%7C%7C%7C; LA_V_T_N_10000161=1598323321624; LA_R_C_10000161=2; LA_R_T_10000161=1598323240031; LA_V_T_N_S_10000161=1598323240031; LA_R_C_10000008=1; LA_R_T_10000008=1597915445536; LA_V_T_N_10000008=1597915445536; LA_V_T_N_S_10000008=1597915445536; LA_F_T_10000008=1597575647330; LA_M_W_10000008=_ck20070918322619180574610397375%7C10000008%7C%7Cwap_1528%7Cwap_Intelligence; leid=1.FSBtRgQ2A+w; LA_C_Id=_ck20070918322619180574610397375; LA_F_T_10000161=1594290746908; LA_M_W_10000161=_ck20070918322619180574610397375%7C10000161%7C%7Cpc_%7Cpc_child; lenovo-ase-cookie=De4SxV28503Vl93Rv8c0"
+          },
+          {
+            "name": "accept",
+            "value": "*/*"
+          },
+          {
+            "name": "x-lenovows-userkey",
+            "value": "8855d973306973f91306e2c3ec4a3dd5"
+          },
+          {
+            "name": "octopus_sid",
+            "value": "cd17961d7fb8e57a503bfffd8a214c37"
+          },
+          {
+            "name": "accept-language",
+            "value": "zh-cn"
+          },
+          {
+            "name": "user-agent",
+            "value": "%E6%99%BA%E6%85%A7%E8%81%94%E6%83%B3/2.2.3.0 CFNetwork/1128.0.1 Darwin/19.6.0"
+          },
+          {
+            "name": "accept-encoding",
+            "value": "gzip, deflate, br"
+          }
+        ]
+      }
+    },
+    "response": {
+      "status": 200,
+      "sizes": {
+        "headers": 82,
+        "body": 3044
+      },
+      "mimeType": "*/*",
+      "charset": null,
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          {
+            "name": ":status",
+            "value": "200"
+          },
+          {
+            "name": "date",
+            "value": "Fri, 16 Oct 2020 08:23:34 GMT"
+          },
+          {
+            "name": "content-type",
+            "value": "*/*"
+          },
+          {
+            "name": "content-length",
+            "value": "3044"
+          },
+          {
+            "name": "access-control-allow-origin",
+            "value": "*"
+          },
+          {
+            "name": "x-frame-options",
+            "value": "SAMEORIGIN"
+          }
+        ]
+      },
+      "body": {
+        "text": "{\"code\":\"0\",\"ts\":1602836614,\"rules\":[{\"rule_id\":\"a2f2e573584c44d03e65a830fe43584de117bc6f\",\"recommend_id\":null,\"rule_name\":\"ç­±ç­±ä½ å¥½ ç¸ç¸åæ¥å¦\",\"rule_desc\":null,\"conditions\":[{\"attribute_id\":\"0x000c0000\",\"class_id\":\"0x000c\",\"gadget_id\":\"ecd4de50df38d7a24659964a10cabd43aa47a198\",\"gadget_type_id\":\"507\",\"option\":\"=\",\"trigger_type\":\"1\",\"value\":[\"1\"]}],\"valid\":true,\"condition_type\":\"and\",\"push_msg_flag\":true,\"actions\":[{\"action_type\":\"4\",\"cmd\":\"mfa\",\"delay\":[0,3],\"timer_id\":\"8855d973306973f91306e2c3ec4a3dd51578625891\"},{\"action\":{\"action_id\":\"0x0004001a\",\"param\":[\"ç­±ç­±ç¸ç¸åæ¥äº\"]},\"action_type\":\"1\",\"class_id\":\"0x0004\",\"cmd\":\"device\",\"gadget_id\":\"066cc6619da48b15545d515cf520f19481d439bd\",\"gadget_type_id\":\"200001\"}],\"start_time\":null,\"end_time\":null,\"week\":[],\"week_type\":null,\"icon\":null,\"trigger_ways\":[2],\"siri_flag\":\"0\",\"siri_shortcuts\":[],\"lcui_flag\":\"0\",\"lcui_shortcuts\":[]},{\"rule_id\":\"ac3b9361729507fc788fa6960d6588742d4c4475\",\"recommend_id\":null,\"rule_name\":\"Testé\",\"rule_desc\":null,\"conditions\":[],\"valid\":true,\"condition_type\":\"and\",\"push_msg_flag\":true,\"actions\":[{\"action\":{\"action_id\":\"0x00021000\",\"param\":[\"0\"]},\"action_type\":\"1\",\"class_id\":\"0x0002\",\"cmd\":\"device\",\"gadget_id\":\"be77a4ee9e72dcd63208683ef937a0b5c1cb96d1\",\"gadget_type_id\":\"20\"}],\"start_time\":[],\"end_time\":[],\"week\":[],\"week_type\":\"4\",\"icon\":\"0\",\"trigger_ways\":[],\"siri_flag\":\"0\",\"siri_shortcuts\":[],\"lcui_flag\":\"0\",\"lcui_shortcuts\":[]},{\"rule_id\":\"913fb9a413c5f1415103d72d96fa994ade56403c\",\"recommend_id\":null,\"rule_name\":\"ä¸è¯¾\",\"rule_desc\":null,\"conditions\":[{\"general\":\"0x10001\",\"trigger_type\":\"2\"}],\"valid\":true,\"condition_type\":\"and\",\"push_msg_flag\":true,\"actions\":[{\"action\":{\"action_id\":\"0x0004001a\",\"param\":[\"è¯¥ä¸è¯¾äº\"]},\"action_type\":\"1\",\"class_id\":\"0x0004\",\"cmd\":\"device\",\"gadget_id\":\"066cc6619da48b15545d515cf520f19481d439bd\",\"gadget_type_id\":\"200001\"}],\"start_time\":null,\"end_time\":null,\"week\":[],\"week_type\":null,\"icon\":null,\"trigger_ways\":[1],\"siri_flag\":\"0\",\"siri_shortcuts\":[],\"lcui_flag\":\"0\",\"lcui_shortcuts\":[]},{\"rule_id\":\"cb12771077dbbfbf91f699eebd0d9b4e85b45311\",\"recommend_id\":null,\"rule_name\":\"testè¯¯å \",\"rule_desc\":null,\"conditions\":[{\"general\":\"0x10001\",\"trigger_type\":\"2\"}],\"valid\":true,\"condition_type\":\"and\",\"push_msg_flag\":true,\"actions\":[{\"action\":{\"action_id\":\"0x00030000\",\"param\":[\"1\"]},\"action_type\":\"1\",\"class_id\":\"0x0003\",\"cmd\":\"device\",\"gadget_id\":\"b3beaab4ed9625aa4769bc9d314e5d7aa011d5d6\",\"gadget_type_id\":\"216\"},{\"action_type\":\"5\",\"cmd\":\"mfa\",\"title\":\"hihi\"},{\"action\":{\"action_id\":\"0x00020000\",\"param\":[\"1\"]},\"action_type\":\"1\",\"class_id\":\"0x0002\",\"cmd\":\"device\",\"gadget_id\":\"be77a4ee9e72dcd63208683ef937a0b5c1cb96d1\",\"gadget_type_id\":\"20\"},{\"action\":{\"action_id\":\"0x0a050000\",\"param\":[\"2\"]},\"action_type\":\"1\",\"class_id\":\"0x0a05\",\"cmd\":\"device\",\"gadget_id\":\"b104f6fa485f80aa31200c41f99ddd1521f22e3b\",\"gadget_type_id\":\"200101\"}],\"start_time\":null,\"end_time\":null,\"week\":[],\"week_type\":null,\"icon\":null,\"trigger_ways\":[1],\"siri_flag\":\"0\",\"siri_shortcuts\":[],\"lcui_flag\":\"0\",\"lcui_shortcuts\":[]}]}",
+        "charset": null
+      }
+    }
+  },
+  {
+    "status": "COMPLETE",
+    "method": "GET",
+    "protocolVersion": "HTTP/2.0",
+    "scheme": "https",
+    "host": "appv1.lenovo.com.cn",
+    "port": 443,
+    "actualPort": 443,
+    "path": "/v2.0/linkage_rules",
+    "query": "ts=1602836614",
+    "tunnel": false,
+    "keptAlive": true,
+    "webSocket": false,
+    "remoteAddress": "appv1.lenovo.com.cn/39.97.4.45",
+    "clientAddress": "/192.168.199.158",
+    "clientPort": 59271,
+    "times": {
+      "start": "2020-10-16T16:23:34.156+08:00",
+      "requestBegin": "2020-10-16T16:23:34.157+08:00",
+      "requestComplete": "2020-10-16T16:23:34.157+08:00",
+      "responseBegin": "2020-10-16T16:23:34.271+08:00",
+      "end": "2020-10-16T16:23:34.272+08:00"
+    },
+    "durations": {
+      "total": 115,
+      "dns": null,
+      "connect": null,
+      "ssl": null,
+      "request": 0,
+      "response": 1,
+      "latency": 114
+    },
+    "speeds": {
+      "overall": 1130,
+      "request": 0,
+      "response": 94000
+    },
+    "totalSize": 130,
+    "ssl": {
+      "protocol": "TLSv1.2",
+      "cipherSuite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"
+    },
+    "alpn": {
+      "protocol": "h2"
+    },
+    "request": {
+      "sizes": {
+        "headers": 36,
+        "body": 0
+      },
+      "mimeType": null,
+      "charset": null,
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          {
+            "name": ":method",
+            "value": "GET"
+          },
+          {
+            "name": ":scheme",
+            "value": "https"
+          },
+          {
+            "name": ":path",
+            "value": "/v2.0/linkage_rules?ts=1602836614"
+          },
+          {
+            "name": ":authority",
+            "value": "appv1.lenovo.com.cn:443"
+          },
+          {
+            "name": "cookie",
+            "value": "cerpreg-passport=\"|2|1602811868|1605403868|bGVub3ZvSWQ6MTE6MTAwNDg1NzUzOTd8bG9naW5OYW1lOjExOjEzMzExNTEwNTMyfG1lbWJlcklkOjEwOjE2MDU0MDM4Njh8Z3JvdXBDb2RlOjE6MXxpc0xlbm92bzoxOjA=|LTMd/RUX9FgeIxL1G/YtPSRUng2SQh1BxZbKFpKwOL2+NltHQqAGbDRfCNBQ1b1WUXGLKXPSdbd7b0E9ZODh5C8Vj366EnK8LaJF5+OUWkSsO3FJKXjcwV22Y6PsUyZPMWhghoEttWyOSKgesModjzciM9pM1AvqWUZJPH/b4C2f6YfCoGGaawi4d35MeCQAuQno+Ocuzb7AhasEdTtBJTvsCf6KQd4oh4cVAPbJ3g9EVU+pZVaEg7EA4HZUSFTPm0OzyFX8UvKF1m/5TUrxBeEVOH70owejXCtoCSNgFBTmyJvvDJpgq40OMxkLGjtCWzs/vlfNQoh725mqsoaryA==|\"; _ga=GA1.3.1785471584.1597575647; LA_R_C_10000001=1; LA_R_T_10000001=1599634159891; LA_V_T_10000001=1599634159891; LA_F_T_10000001=1598941649781; LA_M_W_10000001=_ck20070918322619180574610397375%7C10000001%7C%7C%7C; LA_V_T_N_10000161=1598323321624; LA_R_C_10000161=2; LA_R_T_10000161=1598323240031; LA_V_T_N_S_10000161=1598323240031; LA_R_C_10000008=1; LA_R_T_10000008=1597915445536; LA_V_T_N_10000008=1597915445536; LA_V_T_N_S_10000008=1597915445536; LA_F_T_10000008=1597575647330; LA_M_W_10000008=_ck20070918322619180574610397375%7C10000008%7C%7Cwap_1528%7Cwap_Intelligence; leid=1.FSBtRgQ2A+w; LA_C_Id=_ck20070918322619180574610397375; LA_F_T_10000161=1594290746908; LA_M_W_10000161=_ck20070918322619180574610397375%7C10000161%7C%7Cpc_%7Cpc_child; lenovo-ase-cookie=De4SxV28503Vl93Rv8c0"
+          },
+          {
+            "name": "accept",
+            "value": "*/*"
+          },
+          {
+            "name": "x-lenovows-userkey",
+            "value": "8855d973306973f91306e2c3ec4a3dd5"
+          },
+          {
+            "name": "octopus_sid",
+            "value": "cd17961d7fb8e57a503bfffd8a214c37"
+          },
+          {
+            "name": "accept-language",
+            "value": "zh-cn"
+          },
+          {
+            "name": "user-agent",
+            "value": "%E6%99%BA%E6%85%A7%E8%81%94%E6%83%B3/2.2.3.0 CFNetwork/1128.0.1 Darwin/19.6.0"
+          },
+          {
+            "name": "accept-encoding",
+            "value": "gzip, deflate, br"
+          }
+        ]
+      }
+    },
+    "response": {
+      "status": 200,
+      "sizes": {
+        "headers": 80,
+        "body": 14
+      },
+      "mimeType": "*/*",
+      "charset": null,
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          {
+            "name": ":status",
+            "value": "200"
+          },
+          {
+            "name": "date",
+            "value": "Fri, 16 Oct 2020 08:23:34 GMT"
+          },
+          {
+            "name": "content-type",
+            "value": "*/*"
+          },
+          {
+            "name": "content-length",
+            "value": "14"
+          },
+          {
+            "name": "access-control-allow-origin",
+            "value": "*"
+          },
+          {
+            "name": "x-frame-options",
+            "value": "SAMEORIGIN"
+          }
+        ]
+      },
+      "body": {
+        "text": "{\"code\":\"304\"}",
+        "charset": null
+      }
+    }
+  },
+  {
+    "status": "COMPLETE",
+    "method": "POST",
+    "protocolVersion": "HTTP/2.0",
+    "scheme": "https",
+    "host": "appv1.lenovo.com.cn",
+    "port": 443,
+    "actualPort": 443,
+    "path": "/v2.1/linkage_rules/recommend_scene_list",
+    "query": null,
+    "tunnel": false,
+    "keptAlive": true,
+    "webSocket": false,
+    "remoteAddress": "appv1.lenovo.com.cn/39.97.4.45",
+    "clientAddress": "/192.168.199.158",
+    "clientPort": 59271,
+    "times": {
+      "start": "2020-10-16T16:23:34.162+08:00",
+      "requestBegin": "2020-10-16T16:23:34.162+08:00",
+      "requestComplete": "2020-10-16T16:23:34.163+08:00",
+      "responseBegin": "2020-10-16T16:23:34.278+08:00",
+      "end": "2020-10-16T16:23:34.278+08:00"
+    },
+    "durations": {
+      "total": 116,
+      "dns": null,
+      "connect": null,
+      "ssl": null,
+      "request": 1,
+      "response": 0,
+      "latency": 115
+    },
+    "speeds": {
+      "overall": 41844,
+      "request": 36000,
+      "response": 0
+    },
+    "totalSize": 4854,
+    "ssl": {
+      "protocol": "TLSv1.2",
+      "cipherSuite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"
+    },
+    "alpn": {
+      "protocol": "h2"
+    },
+    "request": {
+      "sizes": {
+        "headers": 13,
+        "body": 23
+      },
+      "mimeType": "application/x-www-form-urlencoded",
+      "charset": null,
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          {
+            "name": ":method",
+            "value": "POST"
+          },
+          {
+            "name": ":scheme",
+            "value": "https"
+          },
+          {
+            "name": ":path",
+            "value": "/v2.1/linkage_rules/recommend_scene_list"
+          },
+          {
+            "name": ":authority",
+            "value": "appv1.lenovo.com.cn:443"
+          },
+          {
+            "name": "accept",
+            "value": "*/*"
+          },
+          {
+            "name": "content-type",
+            "value": "application/x-www-form-urlencoded"
+          },
+          {
+            "name": "cookie",
+            "value": "cerpreg-passport=\"|2|1602811868|1605403868|bGVub3ZvSWQ6MTE6MTAwNDg1NzUzOTd8bG9naW5OYW1lOjExOjEzMzExNTEwNTMyfG1lbWJlcklkOjEwOjE2MDU0MDM4Njh8Z3JvdXBDb2RlOjE6MXxpc0xlbm92bzoxOjA=|LTMd/RUX9FgeIxL1G/YtPSRUng2SQh1BxZbKFpKwOL2+NltHQqAGbDRfCNBQ1b1WUXGLKXPSdbd7b0E9ZODh5C8Vj366EnK8LaJF5+OUWkSsO3FJKXjcwV22Y6PsUyZPMWhghoEttWyOSKgesModjzciM9pM1AvqWUZJPH/b4C2f6YfCoGGaawi4d35MeCQAuQno+Ocuzb7AhasEdTtBJTvsCf6KQd4oh4cVAPbJ3g9EVU+pZVaEg7EA4HZUSFTPm0OzyFX8UvKF1m/5TUrxBeEVOH70owejXCtoCSNgFBTmyJvvDJpgq40OMxkLGjtCWzs/vlfNQoh725mqsoaryA==|\"; _ga=GA1.3.1785471584.1597575647; LA_R_C_10000001=1; LA_R_T_10000001=1599634159891; LA_V_T_10000001=1599634159891; LA_F_T_10000001=1598941649781; LA_M_W_10000001=_ck20070918322619180574610397375%7C10000001%7C%7C%7C; LA_V_T_N_10000161=1598323321624; LA_R_C_10000161=2; LA_R_T_10000161=1598323240031; LA_V_T_N_S_10000161=1598323240031; LA_R_C_10000008=1; LA_R_T_10000008=1597915445536; LA_V_T_N_10000008=1597915445536; LA_V_T_N_S_10000008=1597915445536; LA_F_T_10000008=1597575647330; LA_M_W_10000008=_ck20070918322619180574610397375%7C10000008%7C%7Cwap_1528%7Cwap_Intelligence; leid=1.FSBtRgQ2A+w; LA_C_Id=_ck20070918322619180574610397375; LA_F_T_10000161=1594290746908; LA_M_W_10000161=_ck20070918322619180574610397375%7C10000161%7C%7Cpc_%7Cpc_child; lenovo-ase-cookie=De4SxV28503Vl93Rv8c0"
+          },
+          {
+            "name": "accept-encoding",
+            "value": "gzip, deflate, br"
+          },
+          {
+            "name": "octopus_sid",
+            "value": "cd17961d7fb8e57a503bfffd8a214c37"
+          },
+          {
+            "name": "x-lenovows-userkey",
+            "value": "8855d973306973f91306e2c3ec4a3dd5"
+          },
+          {
+            "name": "user-agent",
+            "value": "%E6%99%BA%E6%85%A7%E8%81%94%E6%83%B3/2.2.3.0 CFNetwork/1128.0.1 Darwin/19.6.0"
+          },
+          {
+            "name": "accept-language",
+            "value": "zh-cn"
+          },
+          {
+            "name": "content-length",
+            "value": "23"
+          }
+        ]
+      },
+      "body": {
+        "text": "{\n  \"version\" : \"2.1\"\n}",
+        "charset": null
+      }
+    },
+    "response": {
+      "status": 200,
+      "sizes": {
+        "headers": 100,
+        "body": 4718
+      },
+      "mimeType": "application/json",
+      "charset": "utf8",
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          {
+            "name": ":status",
+            "value": "200"
+          },
+          {
+            "name": "date",
+            "value": "Fri, 16 Oct 2020 08:23:34 GMT"
+          },
+          {
+            "name": "content-type",
+            "value": "application/json;charset=utf8"
+          },
+          {
+            "name": "content-length",
+            "value": "4718"
+          },
+          {
+            "name": "access-control-allow-origin",
+            "value": "*"
+          },
+          {
+            "name": "x-frame-options",
+            "value": "SAMEORIGIN"
+          }
+        ]
+      },
+      "body": {
+        "text": "{\"code\":\"0\",\"info\":[{\"rs_id\":\"ec0e6e69d13bbd45ae7315f78c60f7a7\",\"rs_name\":\"回家\",\"backgroud_icon\":\"{ \\\"backgroud_icon\\\": \\\"https://otav1.lenovo.com.cn/manual_upload/ota/home.png\\\", \\\"icon\\\": \\\"https://otav1.lenovo.com.cn/manual_upload/chef_icon@3x.png\\\" }\",\"condition_type\":\"and\",\"rule_desc\":\"回家的时候，一键休眠所有联想Lecoo智能摄像头。\",\"conditions\":[{\"trigger_type\":\"1\",\"attribute_id\":\"0x000c0000\",\"class_id\":\"0x000c\",\"gadget_id\":\"\",\"option\":\"=\",\"value\":[\"1\"],\"recommend_gadgets\":[{\"gadget_type_id\":\"507\",\"shop_url\":\"https://item.lenovo.com.cn/product/1005495.html\"},{\"gadget_type_id\":\"508\",\"shop_url\":\"https://item.lenovo.com.cn/product/1005773.html\"},{\"gadget_type_id\":\"509\",\"shop_url\":\"https://item.lenovo.com.cn/product/1006186.html\"}]}],\"actions\":[{\"action\":[{\"action_id\":\"0x00300000\",\"param\":[\"0\"]}],\"action_type\":\"1\",\"gadget_type_ids\":[{\"gadget_type_id\":\"200053\"},{\"gadget_type_id\":\"200054\"},{\"gadget_type_id\":\"200056\",\"shop_url\":\"https://item.lenovo.com.cn/product/1005712.html\"},{\"gadget_type_id\":\"200061\",\"shop_url\":\"https://tk.lenovo.com.cn/product/1006613.html\"},{\"gadget_type_id\":\"200063\",\"shop_url\":\"https://tk.lenovo.com.cn/product/1006911.html\"},{\"gadget_type_id\":\"200066\"},{\"gadget_type_id\":\"200067\"}]},{\"action\":[{\"action_id\":\"0x0a050000\",\"param\":[\"2\"]}],\"action_type\":\"1\",\"gadget_type_ids\":[{\"gadget_type_id\":\"200101\",\"shop_url\":\"https://item.lenovo.com.cn/product/1005901.html\"}]}],\"start_time\":null,\"end_time\":null,\"valid\":\"true\",\"push_msg_flag\":\"false\",\"week\":null,\"status\":\"2\"},{\"rs_id\":\"cb6859762b3236855f3c31ee753be4ad\",\"rs_name\":\"离家\",\"backgroud_icon\":\"{ \\\"backgroud_icon\\\": \\\"https://otav1.lenovo.com.cn/manual_upload/ota/outhome.png\\\", \\\"icon\\\": \\\"https://otav1.lenovo.com.cn/manual_upload/liaj_icon@3x.png\\\" }\",\"condition_type\":\"and\",\"rule_desc\":\"离开家的时候，一键打开联想Lecoo智能摄像头，安心出行。\",\"conditions\":[{\"trigger_type\":\"1\",\"attribute_id\":\"0x000c0000\",\"class_id\":\"0x000c\",\"gadget_id\":\"\",\"option\":\"=\",\"value\":[\"2\"],\"recommend_gadgets\":[{\"gadget_type_id\":\"507\",\"shop_url\":\"https://item.lenovo.com.cn/product/1005495.html\"},{\"gadget_type_id\":\"508\",\"shop_url\":\"https://item.lenovo.com.cn/product/1005773.html\"},{\"gadget_type_id\":\"509\",\"shop_url\":\"https://item.lenovo.com.cn/product/1006186.html\"}]}],\"actions\":[{\"action\":[{\"action_id\":\"0x00300000\",\"param\":[\"1\"]}],\"action_type\":\"1\",\"gadget_type_ids\":[{\"gadget_type_id\":\"200053\"},{\"gadget_type_id\":\"200054\"},{\"gadget_type_id\":\"200056\",\"shop_url\":\"https://item.lenovo.com.cn/product/1005712.html\"},{\"gadget_type_id\":\"200061\",\"shop_url\":\"https://tk.lenovo.com.cn/product/1006613.html\"},{\"gadget_type_id\":\"200063\",\"shop_url\":\"https://tk.lenovo.com.cn/product/1006911.html\"},{\"gadget_type_id\":\"200066\"},{\"gadget_type_id\":\"200067\"}]},{\"action\":[{\"action_id\":\"0x0a050000\",\"param\":[\"1\"]}],\"action_type\":\"1\",\"gadget_type_ids\":[{\"gadget_type_id\":\"200101\",\"shop_url\":\"https://item.lenovo.com.cn/product/1005901.html\"}]}],\"start_time\":null,\"end_time\":null,\"valid\":\"true\",\"push_msg_flag\":\"false\",\"week\":null,\"status\":\"2\"},{\"rs_id\":\"955c800f2257d311ddbee8c21721486f\",\"rs_name\":\"睡眠模式\",\"backgroud_icon\":\"{ \\\"backgroud_icon\\\": \\\"https://otav1.lenovo.com.cn/manual_upload/ota/sleep.png\\\", \\\"icon\\\": \\\"https://otav1.lenovo.com.cn/static/appstore/images/shuimianicon.png\\\" }\",\"condition_type\":\"and\",\"rule_desc\":\"睡觉前，自动关闭智能插座，并将空气净化器调为睡眠模式，睡的香甜。\",\"conditions\":[{\"trigger_type\":\"2\",\"general\":\"0x10004\"}],\"actions\":[{\"action\":[{\"action_id\":\"0x00030000\",\"param\":[\"0\"]}],\"action_type\":\"1\",\"gadget_type_ids\":[{\"gadget_type_id\":\"216\",\"shop_url\":\"https://mitem.lenovo.com.cn/product/1002495.html\"}]},{\"action\":[{\"action_id\":\"0x0009000a\",\"param\":[\"0\"]}],\"action_type\":\"1\",\"gadget_type_ids\":[{\"gadget_type_id\":\"100\",\"shop_url\":\"https://mitem.lenovo.com.cn/product/1002496.html\"}]}],\"start_time\":null,\"end_time\":null,\"valid\":\"true\",\"push_msg_flag\":\"false\",\"week\":null,\"status\":\"2\"},{\"rs_id\":\"74068fea2ddcc864046a04b6cc4b4252\",\"rs_name\":\"一键关闭所有插座\",\"backgroud_icon\":\"{\\\"backgroud_icon\\\":\\\"https://otav1.lenovo.com.cn/manual_upload/ota/closeall.png\\\", \\\"icon\\\":\\\"https://otav1.lenovo.com.cn/static/appstore/images/chazuo_icon.png\\\"}\",\"condition_type\":\"and\",\"rule_desc\":\"离开家时手动一次关闭所有Lecoo智能插座，一度电都不浪费。\",\"conditions\":[{\"trigger_type\":\"2\",\"general\":\"0x10001\"}],\"actions\":[{\"action\":[{\"action_id\":\"0x00030000\",\"param\":[\"0\"]}],\"action_type\":\"1\",\"gadget_type_ids\":[{\"gadget_type_id\":\"205\"},{\"gadget_type_id\":\"216\",\"shop_url\":\"https://mitem.lenovo.com.cn/product/1002495.html\"}]}],\"start_time\":null,\"end_time\":null,\"valid\":\"true\",\"push_msg_flag\":\"false\",\"week\":null,\"status\":\"2\"}]}",
+        "charset": "utf8"
+      }
+    }
+  },
+  {
+    "status": "COMPLETE",
+    "method": "GET",
+    "protocolVersion": "HTTP/2.0",
+    "scheme": "https",
+    "host": "appv1.lenovo.com.cn",
+    "port": 443,
+    "actualPort": 443,
+    "path": "/v2.0/linkage_rules",
+    "query": "ts=1602836614",
+    "tunnel": false,
+    "keptAlive": true,
+    "webSocket": false,
+    "remoteAddress": "appv1.lenovo.com.cn/39.97.4.45",
+    "clientAddress": "/192.168.199.158",
+    "clientPort": 59271,
+    "times": {
+      "start": "2020-10-16T16:23:34.340+08:00",
+      "requestBegin": "2020-10-16T16:23:34.341+08:00",
+      "requestComplete": "2020-10-16T16:23:34.341+08:00",
+      "responseBegin": "2020-10-16T16:23:34.356+08:00",
+      "end": "2020-10-16T16:23:34.356+08:00"
+    },
+    "durations": {
+      "total": 15,
+      "dns": null,
+      "connect": null,
+      "ssl": null,
+      "request": 0,
+      "response": 0,
+      "latency": 15
+    },
+    "speeds": {
+      "overall": 7000,
+      "request": 0,
+      "response": 0
+    },
+    "totalSize": 105,
+    "ssl": {
+      "protocol": "TLSv1.2",
+      "cipherSuite": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"
+    },
+    "alpn": {
+      "protocol": "h2"
+    },
+    "request": {
+      "sizes": {
+        "headers": 11,
+        "body": 0
+      },
+      "mimeType": null,
+      "charset": null,
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          {
+            "name": ":method",
+            "value": "GET"
+          },
+          {
+            "name": ":scheme",
+            "value": "https"
+          },
+          {
+            "name": ":path",
+            "value": "/v2.0/linkage_rules?ts=1602836614"
+          },
+          {
+            "name": ":authority",
+            "value": "appv1.lenovo.com.cn:443"
+          },
+          {
+            "name": "cookie",
+            "value": "cerpreg-passport=\"|2|1602811868|1605403868|bGVub3ZvSWQ6MTE6MTAwNDg1NzUzOTd8bG9naW5OYW1lOjExOjEzMzExNTEwNTMyfG1lbWJlcklkOjEwOjE2MDU0MDM4Njh8Z3JvdXBDb2RlOjE6MXxpc0xlbm92bzoxOjA=|LTMd/RUX9FgeIxL1G/YtPSRUng2SQh1BxZbKFpKwOL2+NltHQqAGbDRfCNBQ1b1WUXGLKXPSdbd7b0E9ZODh5C8Vj366EnK8LaJF5+OUWkSsO3FJKXjcwV22Y6PsUyZPMWhghoEttWyOSKgesModjzciM9pM1AvqWUZJPH/b4C2f6YfCoGGaawi4d35MeCQAuQno+Ocuzb7AhasEdTtBJTvsCf6KQd4oh4cVAPbJ3g9EVU+pZVaEg7EA4HZUSFTPm0OzyFX8UvKF1m/5TUrxBeEVOH70owejXCtoCSNgFBTmyJvvDJpgq40OMxkLGjtCWzs/vlfNQoh725mqsoaryA==|\"; _ga=GA1.3.1785471584.1597575647; LA_R_C_10000001=1; LA_R_T_10000001=1599634159891; LA_V_T_10000001=1599634159891; LA_F_T_10000001=1598941649781; LA_M_W_10000001=_ck20070918322619180574610397375%7C10000001%7C%7C%7C; LA_V_T_N_10000161=1598323321624; LA_R_C_10000161=2; LA_R_T_10000161=1598323240031; LA_V_T_N_S_10000161=1598323240031; LA_R_C_10000008=1; LA_R_T_10000008=1597915445536; LA_V_T_N_10000008=1597915445536; LA_V_T_N_S_10000008=1597915445536; LA_F_T_10000008=1597575647330; LA_M_W_10000008=_ck20070918322619180574610397375%7C10000008%7C%7Cwap_1528%7Cwap_Intelligence; leid=1.FSBtRgQ2A+w; LA_C_Id=_ck20070918322619180574610397375; LA_F_T_10000161=1594290746908; LA_M_W_10000161=_ck20070918322619180574610397375%7C10000161%7C%7Cpc_%7Cpc_child; lenovo-ase-cookie=De4SxV28503Vl93Rv8c0"
+          },
+          {
+            "name": "accept",
+            "value": "*/*"
+          },
+          {
+            "name": "x-lenovows-userkey",
+            "value": "8855d973306973f91306e2c3ec4a3dd5"
+          },
+          {
+            "name": "octopus_sid",
+            "value": "cd17961d7fb8e57a503bfffd8a214c37"
+          },
+          {
+            "name": "accept-language",
+            "value": "zh-cn"
+          },
+          {
+            "name": "user-agent",
+            "value": "%E6%99%BA%E6%85%A7%E8%81%94%E6%83%B3/2.2.3.0 CFNetwork/1128.0.1 Darwin/19.6.0"
+          },
+          {
+            "name": "accept-encoding",
+            "value": "gzip, deflate, br"
+          }
+        ]
+      }
+    },
+    "response": {
+      "status": 200,
+      "sizes": {
+        "headers": 80,
+        "body": 14
+      },
+      "mimeType": "*/*",
+      "charset": null,
+      "contentEncoding": null,
+      "header": {
+        "headers": [
+          {
+            "name": ":status",
+            "value": "200"
+          },
+          {
+            "name": "date",
+            "value": "Fri, 16 Oct 2020 08:23:34 GMT"
+          },
+          {
+            "name": "content-type",
+            "value": "*/*"
+          },
+          {
+            "name": "content-length",
+            "value": "14"
+          },
+          {
+            "name": "access-control-allow-origin",
+            "value": "*"
+          },
+          {
+            "name": "x-frame-options",
+            "value": "SAMEORIGIN"
+          }
+        ]
+      },
+      "body": {
+        "text": "{\"code\":\"304\"}",
+        "charset": null
+      }
+    }
+  }
+]

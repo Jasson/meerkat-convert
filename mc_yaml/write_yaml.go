@@ -28,14 +28,14 @@ type T struct {
 	}
 }
 
-func Write(writeContext interface{} ) {
+func Write(writeContext interface{}, fileName string) {
 	d, err := yaml.Marshal(&writeContext)
 	if err != nil {
 		log.Fatalf("error: %v", err)
 	}
 	log.Printf("--- t dump:\n%s\n\n", string(d))
 
-	file, err := os.OpenFile("new.yaml", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	file, err := os.OpenFile(fileName, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	file.Write(d)
 	defer file.Close()
 

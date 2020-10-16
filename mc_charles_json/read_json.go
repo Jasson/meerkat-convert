@@ -1,4 +1,4 @@
-package mc_json
+package mc_charles_json
 
 import (
 	"encoding/json"
@@ -10,32 +10,31 @@ func init() {
 	log.SetFlags(log.Ldate | log.Lshortfile)
 }
 
-type PostMan struct {
-	Info interface{} `json:"info"`
-	Item []Item      `json:"item"`
-}
 type Item struct {
-	Name    string  `json:"name"`
+	Host string `json:"host"`
+	Post string  `json:"post"`
+	Port int `json:"port"`
+	Path string `json:"path"`
 	Request Request `json:"request"`
 }
 
 type Request struct {
-	Method string   `json:"method"`
-	Header []Header `json:"header"`
+	Header Header `json:"header"`
 	Body   Body     `json:"body"`
 	Url    Url      `json:"url"`
 }
 
 type Header struct {
-	Key   string `json:"key"`
+	Headers []NameValue `json:"headers"`
+}
+type NameValue struct {
+	Name string `json:"name"`
 	Value string `json:"value"`
-	Type  string `json:"type"`
 }
 
 type Body struct {
-	Mode    string  `json:"mode"`
-	Raw     string  `json:"raw"`
-	Options Options `json:"options"`
+	Text    string  `json:"text"`
+	Charset     string  `json:"charset"`
 }
 type Options struct {
 	Raw Raw `json:"raw"`
@@ -51,11 +50,11 @@ type Url struct {
 	Path []string `json:"path"`
 }
 
-func ReadJson(fileName string) PostMan {
+func ReadJson(fileName string) interface{} {
 
 	log.Println("fileName", fileName)
 
-	var postMan PostMan
+	var items []Item
 
 	file, err := os.Open(fileName)
 	if err != nil {
@@ -63,11 +62,11 @@ func ReadJson(fileName string) PostMan {
 	}
 	defer file.Close()
 
-	err1 := json.NewDecoder(file).Decode(&postMan)
+	err1 := json.NewDecoder(file).Decode(&items)
 	if err1 != nil {
 		log.Println("error ", err1)
 	}
-	log.Printf("person%#vf", postMan)
+	log.Printf("person%#vf", items)
 
-	return postMan
+	return items
 }
