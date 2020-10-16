@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "9c7f7b57-891b-4925-bdf6-50919038de79",
+		"name": "tubi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "vedio/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "helloKey",
+						"value": "HeloValue",
+						"type": "text"
+					},
+					{
+						"key": "Hi",
+						"value": "Hvalue",
+						"description": "test",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\": \"user_id_001\",\n    \"item_id\": \"itme_id111\",\n    \"type\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/vedio/update",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"vedio",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vedio/删除他人数据返回 10001",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7c1ae4af-8774-49cd-8f83-174965504c10",
+						"exec": [
+							"// pm.test(\"Body matches string\", function () {",
+							"//     pm.expect(pm.response.text()).to.include(\"10001\");",
+							"// });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"2896633a-25b7-4d18-b2c1-ed61ba96bd4a\",\n    \"user_id\":\"003\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/vedio/delete",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"vedio",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vedio/删除自己数据返返回成功 0",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "054e1d37-5e65-4758-8d17-f061b159f6e7",
+						"exec": [
+							"// pm.test(\"Body matches string\", function () {",
+							"//     pm.expect(pm.response.text()).to.include(\"成功\");",
+							"// });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"028619a0-559e-48ba-b46b-765a4e8bc15d\",\n    \"user_id\":\"user_id_001\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/vedio/delete",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"vedio",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vedio/list/查询喜欢的内容",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8a4b97eb-403e-425e-b480-07bef152914e",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"成功\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \n    \"user_id\":\"user_id_001\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/vedio/lists",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"vedio",
+						"lists"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
